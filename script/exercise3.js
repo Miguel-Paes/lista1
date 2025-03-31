@@ -1,4 +1,4 @@
-function balancoAnual () {
+function balancoAnual() {
   let mesesGanho = []
   let mesesDespesa = []
   let ganhoFinal = 0
@@ -15,13 +15,13 @@ function balancoAnual () {
 
   lucro = ganhoFinal - despesaFinal
 
-  if (lucro < 0) {
+  if (lucro > 0) {
     document.write(`A empresa teve um lucro de: R$${lucro}`)
   } else {
     if (lucro == 0) {
       document.write(`A empresa não teve lucros nem prejuízos`)
     } else {
       document.write(`A empresa teve um prejuízo de: R$${lucro}`)
-     }
+    }
   }
 }
